@@ -40,18 +40,30 @@ Experiment 5 recap: The aggregation and composition relationship of the class **
 
 Experiment 6 recap: The generalization of the class Customer and class Exec as the class Person was implemented in Java.
 
-Experiment 7 recap: The steps to implement the polymorphic behaviour of the Person object as Customer and Exec objects before and after conversion of the class Person as abstract are performed.
+Experiment 7 recap: The subtype polymorphism was implemented in class Person and the upcasting and down casting of Person, Customer and Exec object was implemented in Java.
 
-Experiment 8 recap: The creational design patterns **Singleton pattern** and **Factory pattern** are implemented in Java. 
+Experiment 8 recap: The creational patterns – Factory, Singleton, and Builder were implemented.
 
-Experiment 9 recap: The structural design pattern **Decorator pattern** is implemented in Java.
+Experiment 9 recap: The structural patterns – Decorator and behavioural pattern – Iterator were implemented.
 
-Now, the concept of parameterized ploymorphism is to be implemented in Java.
+Now, the steps to implement the as follows:
 
-Step 1: Using the provided Exec, Customer, Person, RentalSystem and Reservation classes as reference, follow the instructions provided in the comments to make the necessary changes to the TestDriver to implement error handling and parameterized polymorphism.
+Step 1: In the **TestDriver** class, create an ArrayList of **Person** and insert **Customer** and Exec objects. Raise Type mismatch error and handle it with class cast exception. Similarly access uninitialized object and handle it with null pointer exception.
 
-Step 2: Modify the TestDriver class by including countPerson functions that count the number of objects with Email and Phone by implementing the Java concept of generics.
+Step 2: In the TestDriver.Java, add the following methods with ArrayList of Person as input:
 
-Output: Execution of the TestDriver code is shown in the console view.
+i. countPersonwithEmail-counts any list of customer, person or clerk to provide the number of members with email.
 
-> **Note:** Work on the experiments sequentially.
+ii. countPersonwithPhone- counts any list of customer, person or clerk to provide the number of members with a valid Phone number.
+
+iii. countCustomers – counts any list of customers or its super classes to provide the number of customers in the list.
+
+iv. countClerk– counts any list of clerks or its super classes to provide the number of clerks in the list.
+
+v. displayall– displays the description of customers and clients.
+
+Hint: some of these methods-- but not all -- should use wildcards in the type declarations.
+
+Output: Execution of the **TestDriver** code is displayed for steps 1 and 2.
+
+>Note: Work on the experiments sequentially.
