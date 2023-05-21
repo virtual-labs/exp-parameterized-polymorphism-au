@@ -1,0 +1,726 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'AU',
+        'phase': 'Testing',
+        'expName': 'PARAMETERIZED POLYMORPHISM',
+        'expShortName': 'parameterized-polymorphism'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="parameterized-polymorphism">
+    	<meta name="developer-institute" content="AU">
+    	<meta name="learning-unit" content="PARAMETERIZED POLYMORPHISM">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="./assets/katex_assets/katex.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+              <bug-report id="bug-report" title="[BUG REPORT] PARAMETERIZED POLYMORPHISM" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;AU&quot;,&quot;expname&quot;:&quot;PARAMETERIZED POLYMORPHISM&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          	<a href="validator-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Validation Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="parameterized-polymorphism">Parameterized Polymorphism</h2>
+          
+            </div>
+              <h3 id="theory">Theory</h3>
+          <p><strong>Exception handling:</strong></p>
+          <p>Runtime Error: Runtime errors occur while a program is running if the JVM detects an operation that is impossible to carry out. Example:</p>
+          <ul>
+          <li>accessing an unavailable array index</li>
+          <li>entering a double when program wants int</li>
+          </ul>
+          <p>When a program runs into a runtime error, the program terminates abnormally.</p>
+          <p>Exception: An object representing</p>
+          <ul>
+          <li>an error or</li>
+          <li> an abnormal condition</li>
+          </ul>
+          <p>that prevents execution from proceeding normally. JVM or Java Programs – can throw an exception.</p>
+          <p>Exception handling: enables a program to</p>
+          <ul>
+          <li><p> deal with the exceptional situations and</p>
+          </li>
+          <li><p>continue its normal execution.</p>
+          </li>
+          </ul>
+          <p>Exceptions are thrown from a method definition. The caller of the method can catch and handle the exception.</p>
+          <p>Syntax for throwing and handling of exception is as follows:</p>
+          <pre><code>try{
+              Code to run:
+              A statement or a method definition that may throw an exception.
+              More code to run
+          }
+          catch(type ex){
+              Code to process the exception
+          }
+          </code></pre>
+          <p>Types:</p>
+          <ul>
+          <li><p>System Errors: generated by JVM and</p>
+          <ul>
+          <li>represented by Error class</li>
+          </ul>
+          </li>
+          <li><p>Exceptions: caused by the java program and external circumstances</p>
+          <ul>
+          <li>represented by Exception class</li>
+          </ul>
+          </li>
+          <li><p>Runtime Exceptions: caused by programming errors, such as bad casting, accessing an out-of-bounds array, and numeric errors</p>
+          <ul>
+          <li> represented by RuntimeException class</li>
+          </ul>
+          </li>
+          </ul>
+          <p>RuntimeException, Error and their subclasses are known as unchecked exceptions.</p>
+          <ul>
+          <li><p> Unchecked exceptions can occur anywhere in a program and are unrecoverable</p>
+          </li>
+          <li><p>Java does not mandate that you write code to catch or declare unchecked exceptions.</p>
+          </li>
+          </ul>
+          <p>All other exceptions are known as checked exceptions - the compiler forces the programmer to check and deal with the exceptions.</p>
+          <center><img src="images\fig1.jpg"></center>
+          
+          <p>Checked exceptions that can be thrown in a method must be caught and handled</p>
+          <p>OR declared in the throws clause</p>
+          <p>Every method must state the types of checked exceptions it might throw. This is known as declaring exceptions. If a method does not declare exceptions in the superclass, you cannot override it to declare exceptions in the subclass</p>
+          <p><strong>Syntax of throws:</strong></p>
+          <ul>
+          <li>If a method is capable of causing an exception that it does not handle, it must specify this behavior so that callers of the method can guard themselves against that exception.</li>
+          </ul>
+          <p>type method-name (parameter-list) throws exception-list</p>
+          <p>{</p>
+          <p>// body of method</p>
+          <p>}</p>
+          <ul>
+          <li>It is not applicable for Error or RuntimeException, or any of their subclasses.</li>
+          </ul>
+          <p>Throwing Exception: When the program detects an error, the program can create an instance of an appropriate exception type and throw it. This is known as throwing an exception. Here is an example,</p>
+          <p>throw new TheException();</p>
+          <p>or</p>
+          <p>TheException ex = new TheException(); throw ex;</p>
+          <p><strong>Syntax of throw:</strong></p>
+          <ul>
+          <li> It is possible for your program to throw an exception explicitly
+          throw ThrowableInstance</li>
+          <li> Here, ThrowableInstance must be an object of type Throwable or a subclass Throwable.</li>
+          </ul>
+          <p>Catching exception:</p>
+          <p>On executing try block:</p>
+          <ul>
+          <li> If no exceptions, the catch blocks are skipped.</li>
+          <li>If one of the statements inside the try block throws an exception,<ul>
+          <li>Skip remaining statements in the try block</li>
+          <li>Start finding the code to handle the exception by propagating the exception backward through a chain of method calls, starting from the current method.</li>
+          </ul>
+          </li>
+          <li>Visit previous caller: Examine each catch block in order to match exception type.<ul>
+          <li>If handler found, object is assigned to the variable declared, and the code in the catch block is executed.</li>
+          <li>If no handler is found, Java exits this method, passes the exception to the method that invoked the method, and continues the same process to find a handler in subsequent called method. The process of finding a handler is called catching an exception</li>
+          </ul>
+          </li>
+          </ul>
+          <pre><code>try{
+              statements;
+              //statements that may throw exceptions
+          }
+          catch (Exception1 exvar1){
+              handler for exception1;
+          }
+          catch (Exception2 exvar2){
+              handler for exception2;
+          }
+          catch (Exception1 exvar3){
+              handler for exception3;
+          }
+          </code></pre>
+          <br>
+          <center><img src="images\fig2.jpg"></center>
+          <br>
+          
+          <p><strong>Generics:</strong></p>
+          <p>Generics deals with type-safe objects. It makes the type errors identifiable at compile-time. Consider an example to create a Box object:</p>
+          <pre><code>public class OldBox
+          
+          {
+          
+          Object data;
+          
+          public OldBox(Object data)
+          {
+          
+          this.data = data;
+          
+          }
+          
+          public Object getData()
+          
+          {
+          
+          return data;
+          
+          }
+          
+          }
+          </code></pre>
+          <p>As the all the classes have the parent as Object we can create multiple types of Boxes as follows:</p>
+          <pre><code>OldBox intBox = new OldBox(42);
+          
+          int x = (Integer) intBox.getData();
+          
+          OldBox strBox = new OldBox(“Hi”);
+          
+          String s = (String) strBox.getData();
+          
+          int y = (Integer) strBox.getData();
+          
+          intBox = strBox;
+          </code></pre>
+          <p>You see that an String type Box object is assigned to an Integer type object which produes the error: ClassCastException! Compiles but fails at runtime.</p>
+          <p>Parametrized Classes:</p>
+          <p>A Naïve solution is to create independent class for each specific Box type which demands the development of infinite number of classes. Hence, using the analogy as methods which generalize the inputs through its parameters, we can design parametrized classes. So, the example gets modified as follows:</p>
+          <pre><code>public class Box &lt;E&gt;
+          
+          {
+          
+          E data;
+          
+          public Box(E data)
+          
+          {
+          
+          this.data = data;
+          
+          }
+          
+          public E getData()
+          
+          {
+          
+          return data;
+          
+          }
+          
+          }
+          </code></pre>
+          <p>This parametrized class can be invoked as follows:</p>
+          <pre><code>Box intBox = new Box(42);
+          
+          int x = intBox.getData();//no cast needed
+          
+          Box strBox = new Box(“Hi”);
+          
+          String s = strBox.getData();//no cast needed
+          </code></pre>
+          <p>The Runtime errors get converted to compile-time errors. The usage of generics in Java are:</p>
+          <ul>
+          <li><p> Particularly useful for “container” classes. Containers hold but do not process data</p>
+          </li>
+          <li><p> All collections framework classes in Java 5.0 defined using generics. See the Java 5.0 API documentation.</p>
+          </li>
+          </ul>
+          <p>The parametrized class has the following features:</p>
+          <ul>
+          <li>It can take multiple parameters. Syntax: public class classname&lt;A,B,C,…&gt;{ … }</li>
+          <li> Subclassing parameterized classes allowed. Example:
+          ```
+          /* Extending a particular type */</li>
+          </ul>
+          <p>class IntBox extends Box { … } Or</p>
+          <p>/* Extending a parameterized type */</p>
+          <p>class SpecialBox extends Box { …}</p>
+          <pre><code>
+          - A parameterized class is a type just like any other class. It can be used in method input types and return types, Example:
+          
+          Box&lt;String&gt; aMethod(int i, Box&lt;Integer&gt; b) { … }
+          
+          
+          Bounded Parameterized Types:
+          
+          Sometimes we want restricted parameterization of classes. We want a box, called MathBox that holds only Number objects. We can’t use Box&lt;E&gt; because E could be anything. We want E to be a subclass of Number.
+          </code></pre>
+          <p>public class MathBox extends Box<e></e></p>
+          <p>{</p>
+          <p>public MathBox(E data)</p>
+          <p>{</p>
+          <p>super(data);</p>
+          <p>}</p>
+          <p>public double sqrt()</p>
+          <p>{</p>
+          <p>return Math.sqrt(getData().doubleValue());</p>
+          <p>}</p>
+          <p>}</p>
+          <pre><code>
+          The &lt;E extends Number&gt; syntax means that the type parameter of MathBox must be a subclass of the Number class. We say that the type parameter is bounded.
+          
+          Inside a parameterized class, the type parameter serves as a valid type. So the following is valid.
+          
+          public class OuterClass&lt;T&gt;
+          
+          {
+          
+          private class InnerClass&lt;E extends T&gt;
+          
+          { … }
+          
+          …
+          
+          }
+          
+          Syntax note: The &lt;A extends B&gt; syntax is valid even if B is an interface.
+          
+          Java allows multiple inheritance in the form of implementing multiple interfaces. So multiple bounds may be necessary to specify a type parameter. The following syntax is used then:
+          
+          Class clasname&lt;T extends A &amp; B &amp;C &amp;….&gt;{ … }
+          
+          Parametrized Methods:
+          
+          We can fix the type used inn methods by parametrizing the class. Here we have locked the type used in methods.
+          </code></pre>
+          <p>public class Bar<t></t></p>
+          <p>{</p>
+          <p>//Bar is parameterized</p>
+          <p>public T aMethod(T x)</p>
+          <p>{</p>
+          <p>return x;</p>
+          <p>}</p>
+          <p>public static void main(String[] args)</p>
+          <p>{</p>
+          <p>Bar bar = new Bar();</p>
+          <p>int k = bar.aMethod(5); String s = bar.aMethod("abc"); //Compilation error here</p>
+          <p>}</p>
+          <p>}</p>
+          <p>Now, if we do not fix the type in class then can vary the type in methods.</p>
+          <p>public class Bar</p>
+          <p>{</p>
+          <p>//Bar is not parameterized</p>
+          <p>public <t>T aMethod(T x)</t></p>
+          <p>{</p>
+          <p>return x;</p>
+          <p>}</p>
+          <p>public static void main(String[] args)</p>
+          <p>{</p>
+          <p>Bar bar = new Bar();</p>
+          <p>int k = bar.aMethod(5); String s = bar.aMethod("abc"); //No Compilation error</p>
+          <p>}</p>
+          <p>}</p>
+          <pre><code>
+          Upper Bounded Wildcards in Parameterized Types:
+          
+          We start to run into some new issues when we do some things that seem “normal”. For instance, the following seems reasonable:
+          
+          Box&lt;Number&gt; numBox = new Box&lt;Integer&gt; (31);
+          
+          Compiler comes back with an “Incompatible Type” error message. This is because numBox can hold only a Number object and nothing else, not even an object of type Integer which is a subclass of Number. The type of numBox we desire is “a Box of any type which extends Number”.
+          
+          Box&lt;? extends Number&gt; numBox = new Box&lt;Integer&gt; (31);
+          
+          Similarly, we can also add upper bound in method parameters also.
+          </code></pre>
+          <p>public class Box</p>
+          <p>{</p>
+          <p>public void copyFrom(Box b)</p>
+          <p>{</p>
+          <p>this.data = b.getData();//b.getData() is a subclass of this.data</p>
+          <p>}</p>
+          <p>}</p>
+          <pre><code> is called “upper bounded wildcard” because it defines a type that is bounded by the superclass E. Lower Bounded Wildcards in Parameterized Types:
+          
+          Suppose we want to write copyTo() that copies data in the opposite direction of copyFrom(). copyTo() copies data from the host object to the given object. This can be done as:
+          </code></pre>
+          <p>public void copyTo(Box<e> b)</e></p>
+          <p>{</p>
+          <p>b.data = this.getData();</p>
+          <p>}</p>
+          <p>```</p>
+          <p>Above code is fine as long as b and the host are boxes of exactly same type.</p>
+          <p>But b could be a box of an object that is a superclass of E.</p>
+          <p>This can be expressed as:</p>
+          <p>public void copyTo(Box&lt;? Super E&gt; b)</p>
+          <p>{</p>
+          <p>b.data = this.getData(); //b.data() is a superclass of this.data()</p>
+          <p>}</p>
+          <!--? Super E--> is called a “lower bounded wildcard” because it defines a type that is bounded by the subclass E.
+          
+          Unbounded Wildcards:
+          
+          Use unbounded wildcards when any type parameter works. is used to specify unbounded wildcards. The following are legal statements.
+          
+          Box<!--?--><p> b1 = new Box<integer> (31);</integer></p>
+          <p>Box&lt;?&gt; b2 = new Box<string> (“Hi”);</string></p>
+          <p>b1 = b2;</p>
+          <p>Box&lt;?&gt; is a superclass of Box<t> for any T. Unbounded wildcards are useful when writing code that is completely independent of the parameterized type.</t></p>
+          <p>Wildcard capture: The compiler can figure out exactly what type b1 is above from the right hand side of the assignments. This “capturing” of type information means:</p>
+          <ol>
+          <li><p>The type on the left hand doesn’t need to be specified.</p>
+          </li>
+          <li><p>The compiler can do additional type checks because it knows the type of b1.</p>
+          </li>
+          </ol>
+          
+          </div>
+              <div class="bug-report-mobile">
+                  <bug-report id="bug-report" title="[BUG REPORT] PARAMETERIZED POLYMORPHISM" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;AU&quot;,&quot;expname&quot;:&quot;PARAMETERIZED POLYMORPHISM&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,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);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);
+                      "></bug-report>
+              </div>
+        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fa fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fa fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fa fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fa fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script src="./assets/js/toggleSidebar.js"></script>
+    <script src="./assets/js/event-handler.js"></script>
+
+  
+
+<script type="module" src="https://virtual-labs.github.io/svc-bug-report/client/src/bug-report.js"></script></body></html>
