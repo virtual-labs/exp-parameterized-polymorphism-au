@@ -125,7 +125,7 @@ catch (Exception1 exvar3){
 <center><img src="images\fig2.jpg"></center>
 <br>
 
-**Generics:**
+**Generics/Parameterized Polymorphism:**
 
 Generics deals with type-safe objects. It makes the type errors identifiable at compile-time. Consider an example to create a Box object:
 ```
