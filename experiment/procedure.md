@@ -46,6 +46,8 @@ Experiment 8 recap: The creational patterns – Factory, Singleton, and Builder 
 
 Experiment 9 recap: The structural patterns – Decorator and behavioural pattern – Iterator were implemented.
 
+#### Steps to complete current experiment:
+
 Now, the steps to implement the as follows:
 
 Step 1: In the **TestDriver** class, create an ArrayList of **Person** and insert **Customer** and Exec objects. Raise Type mismatch error and handle it with class cast exception. Similarly access uninitialized object and handle it with null pointer exception.
