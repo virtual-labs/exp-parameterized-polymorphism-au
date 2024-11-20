@@ -1,0 +1,43 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question": ".Which of the following statements is true about parameterized constructors in Java?",
+        "answers": {
+          "a": "Parameterized constructors have no arguments.",
+          "b": "Parameterized constructors are called using the new keyword.",
+          "c": "Parameterized constructors have parameters that are used to initialize instance variables.",
+          "d": "Parameterized constructors are used to create static objects."
+        },
+       
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "Which of the following statements is true about the number of parameterized constructors that can be defined for a class in Java?",
+        "answers": {
+          "a": "A class can have only one parameterized constructor",
+          "b": "A class can have multiple parameterized constructors, but they must have the same number of parameters.",
+          "c": "A class can have multiple parameterized constructors, with different numbers and types of parameters.",
+          "d": "A class cannot have parameterized constructors."
+        },
+         
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      },
+      {
+          "question": "Which of the following statements is true about default constructors and parameterized constructors in Java?",
+          "answers": {
+            "a": "A class can have both a default constructor and a parameterized constructor.",
+            "b": "If a class has a parameterized constructor, it cannot have a default constructor.",
+            "c": "If a class has a default constructor, it cannot have a parameterized constructor.",
+            "d": "Default constructors and parameterized constructors are the same thing."
+          },
+           
+          "correctAnswer": "a",
+          "difficulty": "beginner"
+        }
+  
+    ]
+  }
+  

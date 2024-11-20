@@ -1,0 +1,32 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "Consider a class Book with private instance variables title and author, and a parameterized constructor that takes two parameters t and a to initialize title and author, respectively. Which of the following code snippets correctly creates an object of the Book class with the title \"The Catcher in the Rye\" and author \"J.D. Salinger\"?",
+        "answers": {
+          "a": "Book(\"The Catcher in the Rye\", \"J.D. Salinger\")",
+          "b": "Book myBook = new Book(\"The Catcher in the Rye\", \"J.D. Salinger\")",
+          "c": "myBook = new Book(\"The Catcher in the Rye\", \"J.D. Salinger\")",
+          "d": "Book myBook = Book(\"The Catcher in the Rye\", \"J.D. Salinger\")"
+        },
+       
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      },
+      {
+        "question":". Consider a class Person with private instance variables name and age, and a parameterized constructor that takes two parameters n and a to initialize name and age, respectively. Which of the following code snippets correctly creates an array of three Person objects, with the names \"Alice\", \"Bob\", and \"Charlie\", and the ages 25, 30, and 35, respectively?",
+        "answers": {
+          "a": "Person[] people = new Person[3] {\"Alice\", \"Bob\", \"Charlie\", 25, 30, 35}",
+          "b": "Person[] people = new Person[3] {new Person(\"Alice\", 25), new Person(\"Bob\", 30), new Person(\"Charlie\", 35)}",
+          "c": "Person[] people = {new Person(\"Alice\", 25), new Person(\"Bob\", 30), new Person(\"Charlie\", 35)}",
+          "d": "Person[] people = new Person[] {new Person(\"Alice\", 25), new Person(\"Bob\", 30), new Person(\"Charlie\", 35)}"
+        },
+         
+        "correctAnswer": "d",
+        "difficulty": "beginner"
+      }
+      
+  
+    ]
+  }
+  
