@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question": ".Which of the following statements is true about parameterized constructors in Java?",
+        "question": "1. Which of the following statements is true about parameterized constructors in Java?",
         "answers": {
           "a": "Parameterized constructors have no arguments.",
           "b": "Parameterized constructors are called using the new keyword.",
@@ -14,7 +14,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "Which of the following statements is true about the number of parameterized constructors that can be defined for a class in Java?",
+        "question": "2. Which of the following statements is true about the number of parameterized constructors that can be defined for a class in Java?",
         "answers": {
           "a": "A class can have only one parameterized constructor",
           "b": "A class can have multiple parameterized constructors, but they must have the same number of parameters.",
@@ -26,7 +26,7 @@
         "difficulty": "beginner"
       },
       {
-          "question": "Which of the following statements is true about default constructors and parameterized constructors in Java?",
+          "question": "3. Which of the following statements is true about default constructors and parameterized constructors in Java?",
           "answers": {
             "a": "A class can have both a default constructor and a parameterized constructor.",
             "b": "If a class has a parameterized constructor, it cannot have a default constructor.",
@@ -35,6 +35,30 @@
           },
            
           "correctAnswer": "a",
+          "difficulty": "beginner"
+        },
+              {
+          "question": "4. What is the correct way to declare a generic class in Java?",
+          "answers": {
+            "a": "class MyClass(T) { /* ... */ }",
+            "b": "class MyClass<T> { /* ... */ }",
+            "c": "class MyClass[T] { /* ... */ }",
+            "d": "class MyClass{T} { /* ... */ }"
+          },
+           
+          "correctAnswer": "b",
+          "difficulty": "beginner"
+        },
+              {
+          "question": "5. Which of the following statements about Java Generics and parameterized types is incorrect?",
+          "answers": {
+            "a": "Generics shift more type checking responsibilities to the compiler, enhancing type safety.",
+            "b": "Generics eliminate the need for downcasts when working with Java Collections.",
+            "c": "Generics can be used with primitive types directly (e.g., List<int>). ",
+            "d": "Wildcards (?) are used in generics to represent unknown types."
+          },
+           
+          "correctAnswer": "c",
           "difficulty": "beginner"
         }
   
